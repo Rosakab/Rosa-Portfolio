@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-text">
+          <p>Hi, my name is <span>Rosa</span> Kabiri</p>
+          <h1>I'm a Front-End Developer.</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About section -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/myPhoto.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              As a front-end developer with a background in art history, I bring
+              a distinctive blend of creativity and technical expertise to the
+              tech industry. My deep appreciation for aesthetics and design
+              principles, cultivated through my art history background, enriches
+              my web development work. I am poised to bring a unique perspective
+              to your tech team, translating artistry into code and delivering
+              captivating online experiences.
+            </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('technologies')"
+              >
+                Technologies
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            </div>
+            <div class="tab-contents active-tab" id="technologies">
+              <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+                <li>ReactJs</li>
+                <li>Java</li>
+                <li>MySql</li>
+                <li>TailwindCss</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>Program Monitoring</li>
+                <li>Client Services</li>
+                <li>Project Management</li>
+                <li>Strategic Planning</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents tab-contents-education" id="education">
+              <ul>
+                <li>
+                  Master of Arts: History of Art, 2019<br />University of
+                  Massachusetts Amherst
+                </li>
+                <li>Front-End Web Development, 2022 <br />Nucamp</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ............portfolio section................ -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
