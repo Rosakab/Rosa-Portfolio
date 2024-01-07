@@ -167,9 +167,13 @@ nav ul li a:hover::after {
   
   margin: 10px 0;
   font-size: 18px;
-  line-height: 25px;;
+  line-height: 14px;;
 }
 
+
+ .tab-contents-education ul li{
+  line-height: 27px;;
+}
 .tab-contents {
   display: none;
 }
@@ -379,7 +383,7 @@ nav .fas{
   }
 
   nav ul{
-    background:#a85ba8;
+    background:#855985;
     position:fixed;
     top:0;
     right:-200px;
@@ -388,12 +392,14 @@ nav .fas{
     padding-top:50px;
     z-index:2;
     transition:right 0.5s;
+    
 
   }
 
   nav ul li{
     display: block;
     margin:25px;
+    
   }
   nav ul .fas{
      position: absolute;
