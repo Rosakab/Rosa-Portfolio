@@ -16,3 +16,19 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+let sidemenu= document.getElementById("sideMenu");
+// let closemenu= document.getElementById("closeMenu");
+// let openmenu= document.getElementById("openMenu");
+
+function openMenu(){
+    sidemenu.style.right="0";
+}
+
+function closeMenu(){
+    sidemenu.style.right="-200px";
+}
+
+
+

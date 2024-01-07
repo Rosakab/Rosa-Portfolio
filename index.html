@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5afe333816.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="image/logo.png"
+      type="image/x-icon"
+      id="favicon"
+    />
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
           <img src="image/logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#content">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
           </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
         </nav>
 
         <div class="header-text">
@@ -36,13 +48,17 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              As a front-end developer with a background in art history, I bring
-              a distinctive blend of creativity and technical expertise to the
-              tech industry. My deep appreciation for aesthetics and design
-              principles, cultivated through my art history background, enriches
-              my web development work. I am poised to bring a unique perspective
-              to your tech team, translating artistry into code and delivering
-              captivating online experiences.
+              An art history enthusiast who transitioned into the world of
+              Frontend Development, I merge creativity with technology to
+              architect captivating digital experiences. My journey from
+              studying visual narratives to mastering coding allows me to fuse
+              my artistic eye with technical expertise, crafting interfaces that
+              resonate on aesthetic and functional levels.
+            </p>
+            <p>
+              Outside work, I enjoy reading novels, stepping into different
+              shoes and experiencing life through various lenses, and keeping up
+              with politics and global events.
             </p>
 
             <div class="tab-titles">
@@ -91,6 +107,228 @@
     </div>
 
     <!-- ............portfolio section................ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="image/pic1.png" alt="" />
+            <div class="layer">
+              <h3>Zellashop</h3>
+
+              <p>Technologies used: ReactJs, TailwindCss, and Firebase.</p>
+              <div class="links">
+                <a href="https://github.com/Rosakab/Zellashop">Code</a>
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="image/pic2.png" alt="" />
+            <div class="layer">
+              <h3>Hulu</h3>
+
+              <p>
+                Technologies used: ReactJs, TailwindCss, and Firebase, using
+                TMDB api.
+              </p>
+              <div class="links">
+                <a href="https://github.com/Rosakab/React-Project--HULU "
+                  >Code</a
+                >
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="image/pic3.png" alt="" />
+            <div class="layer">
+              <h3>Nucamp</h3>
+              <p>Technologies used: Html, Bootstrap, and Javascript.</p>
+              <div class="links">
+                <a href="https://github.com/Rosakab/NuCamp-Project">Code</a>
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="image/pic4.png" alt="" />
+            <div class="layer">
+              <h3>Restaurant Menu App</h3>
+              <p>Technologies used: ReactJs and Css.</p>
+              <div class="links">
+                <a href="https://github.com/Rosakab/Resturant-Menu">Code</a>
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="image/pic5.png" alt="" />
+            <div class="layer">
+              <h3>RBnB</h3>
+
+              <p>Technologies used: Html and Css</p>
+              <div class="links">
+                <a href="https://github.com/Rosakab/Resturant-Menu">Code</a>
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/pic6.png" alt="" />
+            <div class="layer">
+              <h3>Image Search App</h3>
+              <p>
+                Technologies used: Html, Css, and Javascript using Unsplash api.
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/Rosakab/Html-Css--Javascript-Projects/tree/main/Image%20Search
+                "
+                  >Code</a
+                >
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/pic7.png" alt="" />
+            <div class="layer">
+              <h3>Pagination App</h3>
+              <p>
+                Technologies used: ReactJs and TailwindCss using "Game of
+                Thrones" api.
+              </p>
+              <div class="links">
+                <a href="#">Code</a>
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="work">
+            <img src="image/pic8.png" alt="" />
+            <div class="layer">
+              <h3>Calculator App</h3>
+              <p>Technologies used: Html, Css, Javascript.</p>
+              <div class="links">
+                <a
+                  href="https://github.com/Rosakab/Html-Css--Javascript-Projects/tree/main/Calculator
+                "
+                  >Code</a
+                >
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="work">
+            <img src="image/pic9.png" alt="" />
+            <div class="layer">
+              <h3>Notpad App</h3>
+              <p>Technologies used: Html, Css, and Javascript.</p>
+              <div class="links">
+                <a
+                  href="https://github.com/Rosakab/Html-Css--Javascript-Projects/tree/main/Note%20Pad
+                "
+                  >Code</a
+                >
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/pic10.png" alt="" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                Technologies used: Html, Css, and Javascript using Google Weather
+                api.
+              </p>
+              <div class="links">
+                <a
+                  href="https://github.com/Rosakab/Html-Css--Javascript-Projects/tree/main/Weather%20Application
+                "
+                  >Code</a
+                >
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="work">
+            <img src="image/pic11.png" alt="" />
+            <div class="layer">
+              <h3>title 1</h3>
+              <p>description</p>
+              <div class="links">
+                <a href="#">Code</a>
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="work">
+            <img src="image/pic12.png" alt="" />
+            <div class="layer">
+              <h3>title 1</h3>
+              <p>description</p>
+              <div class="links">
+                <a href="#">Code</a>
+                <a href="#">Live</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- .....................................contact.......... -->
+
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>Email: kabirirosa@gmail.com</p>
+
+            <div class="social-icons">
+              <a href="https://github.com/Rosakab"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/rosakabiri/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form
+              method="POST"
+              action="https://getform.io/f/0ed78787-9f15-4866-8c83-2dbe0a8fae1e"
+            >
+              <input
+                type="text"
+                name="Name"
+                placeholder=" Your Beautiful Name"
+                required
+              />
+              <input type="email" name="email" placeholder="Your Email" required />
+              <textarea
+                name="Message"
+                placeholder="Your Message"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
